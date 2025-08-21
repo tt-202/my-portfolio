@@ -83,6 +83,22 @@ function App() {
         </div>
       </section>
 
+      {/* Recommendation Letter Section */}
+      <section className="section">
+        <h2>Recommendation Letter</h2>
+        <p style={{ marginBottom: '2rem', color: '#4a5568', fontSize: '1.1rem' }}>
+          A professional recommendation highlighting my skills, work ethic, and contributions.
+        </p>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <a href="/recommendation_letter.pdf" target="_blank" rel="noreferrer" className="resume-button">
+            📖 View Letter
+          </a>
+          <a href="/recommendation_letter.pdf" download className="resume-button" style={{ background: 'linear-gradient(135deg, #ed8936 0%, #dd6b20 100%)' }}>
+            💾 Download PDF
+          </a>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="section">
         <h2>Get In Touch</h2>
