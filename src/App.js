@@ -105,7 +105,7 @@ function App() {
         <div className="contact-grid">
           <div className="contact-item">
             <span>📧</span>
-            <a href="mailto:tuyentran02@yahoo.com">tuyentran02@yahoo.com</a>
+            <a href="mailto:tu590559@ucf.edu">tu590559@ucf.edu</a>
           </div>
           <div className="contact-item">
             <span>💼</span>
