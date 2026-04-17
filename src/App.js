@@ -77,7 +77,7 @@ function App() {
           <a href="/resume_2025.pdf" target="_blank" rel="noreferrer" className="resume-button">
             📄 View Resume
           </a>
-          <a href="/resume_2025.pdf" download className="resume-button" style={{ background: 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)' }}>
+          <a href="/resume_2026.pdf" download className="resume-button" style={{ background: 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)' }}>
             💾 Download PDF
           </a>
         </div>
