@@ -74,7 +74,7 @@ function App() {
           Download my detailed resume to learn more about my experience, skills, and achievements.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/resume_2025.pdf" target="_blank" rel="noreferrer" className="resume-button">
+          <a href="/resume_2026.pdf" target="_blank" rel="noreferrer" className="resume-button">
             📄 View Resume
           </a>
           <a href="/resume_2026.pdf" download className="resume-button" style={{ background: 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)' }}>
