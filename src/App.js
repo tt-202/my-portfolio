@@ -1,6 +1,12 @@
 import React from "react";
 import "./App.css";
 
+// Paste your deployed feeding-robot web app URL (Vercel, Netlify, team domain, etc.).
+const FEEDING_ROBOT_SITE_URL = "https://robotic-ten.vercel.app/";
+
+// Add `your-demo.mp4` under `public/` and set the path here (e.g. "/pcb-demo.mp4"). Leave "" until the file exists.
+const PCB_DEMO_VIDEO_PATH = "/PCB.mp4";
+
 function App() {
   return (
     <div className="App">
@@ -11,9 +17,10 @@ function App() {
             <h1>Tuyen Tran</h1>
             <div className="subtitle">Computer Engineering Student</div>
             <p className="tagline">
-              Passionate about building innovative web applications and leveraging AI tools 
-              to create impactful solutions. Currently pursuing Computer Engineering at UCF 
-              with a focus on modern web technologies and artificial intelligence.
+            I'm a Computer Engineering student at UCF obsessed with the intersection of modern web development and AI. 
+            I don't just build apps — I build things that make people stop and 
+            think "how did they do that?" From full-stack systems to intelligent interfaces, 
+            I'm always chasing the next hard problem.
             </p>
           </div>
           <img 
@@ -28,6 +35,88 @@ function App() {
       <section className="section">
         <h2>Featured Projects</h2>
         <div className="projects-grid">
+          <div className="project-card">
+            <h3>Autonomous Feeding Robot Arm</h3>
+            <p className="project-meta">
+              UCF Senior Design I · 4-member team · Spring 2026 – July 2026 · In progress
+            </p>
+            <ul className="project-bullets">
+              <li>
+                Building an autonomous feeding robot arm with myCobot 320, NVIDIA Jetson Orin Nano,
+                and a USB camera for real-time object detection and precision motion control.
+              </li>
+              <li>
+                Developed a companion web app for monitoring and control — UI/UX design and REST API
+                integration with the robot controller.
+              </li>
+              <li>
+                Computer vision pipeline using OpenCV for food detection to guide arm positioning and
+                grasping sequences.
+              </li>
+              <li>
+                Project website published; full system delivery on schedule for July 2026.
+              </li>
+            </ul>
+            <div className="tech-stack">
+              <span className="tech-tag">Python</span>
+              <span className="tech-tag">React</span>
+              <span className="tech-tag">OpenCV</span>
+              <span className="tech-tag">myCobot 320 API</span>
+              <span className="tech-tag">Jetson Orin Nano</span>
+              <span className="tech-tag">REST APIs</span>
+            </div>
+            {FEEDING_ROBOT_SITE_URL ? (
+              <a
+                className="project-external-link"
+                href={FEEDING_ROBOT_SITE_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit feeding robot project site →
+              </a>
+            ) : null}
+            <span className="project-card-note">Senior design · ongoing</span>
+          </div>
+
+          <div className="project-card">
+            <h3>Custom PCB Design — LCD &amp; Distance Sensor</h3>
+            <p className="project-meta">UCF Junior Design · Fall 2025</p>
+            <ul className="project-bullets">
+              <li>
+                Designed a custom PCB in Fusion 360: schematic capture, routed layout, verified
+                footprints, and assembled the prototype.
+              </li>
+              <li>
+                Integrated an LCD and ultrasonic distance sensor; validated live readings on-screen
+                after assembly.
+              </li>
+              <li>
+                End-to-end hardware flow: requirements → schematic → layout → build → functional test.
+              </li>
+            </ul>
+            <div className="tech-stack">
+              <span className="tech-tag">Fusion 360</span>
+              <span className="tech-tag">PCB Design</span>
+              <span className="tech-tag">LCD</span>
+              <span className="tech-tag">Ultrasonic Sensor</span>
+            </div>
+            {PCB_DEMO_VIDEO_PATH ? (
+              <div className="project-video-wrap">
+                <video
+                  className="project-video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  aria-label="PCB prototype demo video"
+                >
+                  <source src={PCB_DEMO_VIDEO_PATH} type="video/mp4" />
+                </video>
+                <p className="project-video-caption">Mini demo — bring-up, LCD, and distance readings</p>
+              </div>
+            ) : null}
+            <span className="project-card-note">Junior design · complete</span>
+          </div>
+
           <div className="project-card">
             <h3>React Ingredients Substitutions</h3>
             <p>
@@ -62,8 +151,6 @@ function App() {
               View Project →
             </a>
           </div>
-          
-          {/* Add more project cards here as you complete more projects */}
         </div>
       </section>
 
