@@ -161,10 +161,10 @@ function App() {
           Download my detailed resume to learn more about my experience, skills, and achievements.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="/Tuyen_Tran_Resume_2026.pdf" target="_blank" rel="noreferrer" className="resume-button">
+          <a href="/TuyenTran_2026.pdf" target="_blank" rel="noreferrer" className="resume-button">
             📄 View Resume
           </a>
-          <a href="/Tuyen_Tran_Resume_2026.pdf" download className="resume-button" style={{ background: 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)' }}>
+          <a href="/TuyenTran_2026.pdf" download className="resume-button" style={{ background: 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)' }}>
             💾 Download PDF
           </a>
         </div>
@@ -192,7 +192,7 @@ function App() {
         <div className="contact-grid">
           <div className="contact-item">
             <span>📧</span>
-            <a href="mailto:tuyentran02@yahoo.com">tuyentran02@yahoo.com</a>
+            <a href="mailto:tuyenngoctran.tt26@gmail.com">tuyenngoctran.tt26@gmail.com</a>
           </div>
           <div className="contact-item">
             <span>💼</span>
