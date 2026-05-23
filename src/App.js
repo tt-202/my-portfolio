@@ -24,7 +24,7 @@ function App() {
             </p>
           </div>
           <img 
-            src="/profile.png" 
+            src="/tuyentran.png" 
             alt="Tuyen Tran" 
             className="profile-image"
           />
